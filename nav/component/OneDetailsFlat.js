@@ -22,8 +22,8 @@ var start  = 0
 export default class OneDetailsFlat extends Component{
     //返回首页方法需要修改react-navigation库的源码.修改方法见:http://www.jianshu.com/p/2f575cc35780
     static navigationOptions = ({ navigation }) => ({
-        title: 'FlatList',
-        headerStyle:{backgroundColor:'yellow'},
+        title: '申请历史',
+        headerStyle:{backgroundColor:'#023AFC'},
         headerTintColor: 'black',
         // headerLeft:(
 //             <Text onPress={()=>navigation.goBack("Tab")}>返回首页</Text>
@@ -67,10 +67,11 @@ export default class OneDetailsFlat extends Component{
         var G = parseInt(Math.random()*255)
         var B = parseInt(Math.random()*255)
         return(
-            <View style={{flexDirection:'row',marginTop:5,marginLeft:5,borderWidth:1,marginRight:5,borderColor:'#DEDEDE',backgroundColor:'white'}}>
-                <Image source={require('../image/one_selected.png')} style={{width:60,height:60,borderRadius:30,marginTop:5,marginBottom:5}}/>
+            <View style={{flexDirection:'row',marginTop:10,marginLeft:10,borderWidth:1,marginRight:10,borderColor:'rgba(0, 134, 255, 0.3)',backgroundColor:'white'}}>
+                <Image source={require('../image/one_selected.png')} style={{width:0,height:110,borderRadius:30,marginTop:5,marginBottom:5}}/>
                 <View style={{flexDirection:'column',justifyContent:'space-around',marginLeft:5}}>
-                    <Text style={{fontSize:16,color:'rgba('+R+','+G+','+B+',1.0)'}}>歌名: 彩虹彼岸</Text>
+                    <Text style={{fontSize:18,color:'#444662'}}>万达大厦 办业务</Text>
+                    <Text style={{fontSize:18,color:'#444662'}}>张三四</Text>
                     <View style={{flexDirection:'row'}}>
                         <Text style={{fontSize:14,color:'#BDBDBD'}}>歌手:虚拟歌姬</Text>
                         <Text style={{fontSize:14,color:'#BDBDBD',marginLeft:10}}>专辑:react native</Text>

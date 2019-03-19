@@ -13,7 +13,7 @@ import {
 export default class One extends Component {
     static navigationOptions = ({ navigation }) => ({
         title: '首页',
-        headerStyle:{backgroundColor:'red'},
+        headerStyle:{backgroundColor:'#023AFC'},
         headerTintColor: 'white',
     })
 
