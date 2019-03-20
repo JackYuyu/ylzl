@@ -77,7 +77,7 @@ export default class OneDetailsFlat extends Component{
                         <Text style={{fontSize:14,color:'#BDBDBD',marginLeft:10}}>专辑:react native</Text>
                     </View>
                 </View>
-            <View style={{flexDirction:'column',justifyContent:'space-around',marginLeft:100}}>
+            <View style={{flex:1,flexDirction:'row',justifyContent:'space-around',alignItems:'flex-end',marginRight:10}}>
                 <Text style={{fontSize:18,color:'#FF007F'}}>申请中</Text>
             </View>
             </View>
