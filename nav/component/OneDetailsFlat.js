@@ -71,12 +71,15 @@ export default class OneDetailsFlat extends Component{
                 <Image source={require('../image/one_selected.png')} style={{width:0,height:110,borderRadius:30,marginTop:5,marginBottom:5}}/>
                 <View style={{flexDirection:'column',justifyContent:'space-around',marginLeft:5}}>
                     <Text style={{fontSize:18,color:'#444662'}}>万达大厦 办业务</Text>
-                    <Text style={{fontSize:18,color:'#444662'}}>张三四</Text>
+                    <Text style={{fontSize:18,color:'#444662'}}>云邻公司张三四</Text>
                     <View style={{flexDirection:'row'}}>
                         <Text style={{fontSize:14,color:'#BDBDBD'}}>歌手:虚拟歌姬</Text>
                         <Text style={{fontSize:14,color:'#BDBDBD',marginLeft:10}}>专辑:react native</Text>
                     </View>
                 </View>
+            <View style={{flexDirction:'column',justifyContent:'space-around',marginLeft:100}}>
+                <Text style={{fontSize:18,color:'#FF007F'}}>申请中</Text>
+            </View>
             </View>
         )
     }
