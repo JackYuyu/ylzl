@@ -17,7 +17,7 @@ import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 export default class Two extends Component {
     static navigationOptions = ({ navigation }) => ({
-        title: '订单',
+        title: '访客',
         headerRight: (
                 <Image source={require('../image/two.png')} style={{width:20,height:20,marginRight:5}} />
         ),
@@ -27,7 +27,7 @@ export default class Two extends Component {
                 <Text style={{ fontSize: 15, color: '#333333' }}> android</Text>
             </View>
         ),
-        headerStyle:{backgroundColor:'cyan'},
+        headerStyle:{backgroundColor:'#023AFC'},
     })
 
     render() {
