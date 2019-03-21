@@ -12,7 +12,9 @@ import {
     Image,
     TouchableOpacity
 } from 'react-native';
-
+import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
+import Tab1 from './tabOne';
+import Tab2 from './tabTwo';
 export default class Two extends Component {
     static navigationOptions = ({ navigation }) => ({
         title: '订单',
@@ -30,12 +32,17 @@ export default class Two extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    2
-                </Text>
-
-            </View>
+            <Container style={{flexDirection:'row',marginTop:0,marginLeft:-15}}>
+            <Header hasTabs/>
+    <Tabs renderTabBar={()=> <ScrollableTab />}>
+<Tab heading="拜访预约">
+        <Tab1 />
+        </Tab>
+        <Tab heading="拜访授权">
+        <Tab2 />
+        </Tab>
+        </Tabs>
+        </Container>
         );
     }
 
