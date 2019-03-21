@@ -41,7 +41,7 @@ export default class OneDetails extends Component {
         this.props.navigation.navigate('OneDetailsFlat')
     }
     onclickBtn1 =() =>{
-        this.props.navigation.navigate('OneDetailsList')
+        this.props.navigation.navigate('Authhistory')
     }
 }
 

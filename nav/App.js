@@ -16,7 +16,8 @@ import Two from './component/Two';
 import One from './component/One';
 import OneDetails from './component/OneDetails'
 import OneDetailsFlat from './component/OneDetailsFlat'
-import OneDetailsList from  './component/OneDetailsList'
+import OneDetailsList from './component/OneDetailsList'
+import Authhistory from'./component/Authhistory'
 
 export default class RootScene extends Component {
 
@@ -83,7 +84,8 @@ const Navigator = StackNavigator({
     },
     OneDetailsList : {
         screen:OneDetailsList
+    },
+    Authhistory : {
+        screen:Authhistory
     }
-
-
 });
