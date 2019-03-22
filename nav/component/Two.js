@@ -12,7 +12,7 @@ import {
     Image,
     TouchableOpacity
 } from 'react-native';
-import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
+import { Container, Header, Tab, Tabs, TabHeading, ScrollableTab } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 export default class Two extends Component {
@@ -35,10 +35,10 @@ export default class Two extends Component {
             <Container style={{flexDirection:'row',marginTop:0,marginLeft:-15}}>
             <Header hasTabs/>
     <Tabs renderTabBar={()=> <ScrollableTab />}>
-<Tab heading="拜访预约">
+<Tab heading={ <TabHeading><Text style={{fontSize:18}}>拜访预约</Text></TabHeading>}>
         <Tab1 />
         </Tab>
-        <Tab heading="拜访授权">
+        <Tab heading={ <TabHeading><Text style={{fontSize:18}}>拜访授权</Text></TabHeading>}>
         <Tab2 />
         </Tab>
         </Tabs>

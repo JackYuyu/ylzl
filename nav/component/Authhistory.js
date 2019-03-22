@@ -64,7 +64,7 @@ export default class Authhistory extends Component{
         var G = parseInt(Math.random()*255)
         var B = parseInt(Math.random()*255)
         return(
-            <View style={{flexDirection:'row',marginTop:10,marginLeft:10,borderWidth:1,marginRight:10,borderColor:'rgba(0, 134, 255, 0.3)',backgroundColor:'white'}}>
+            <View style={styles.position}>
     <Image source={require('../image/one_selected.png')} style={{width:0,height:110,borderRadius:30,marginTop:5,marginBottom:5}}/>
         <View style={{flexDirection:'column',justifyContent:'space-around',marginLeft:5}}>
     <Text style={{fontSize:18,color:'#444662'}}>办业务</Text>
@@ -120,5 +120,18 @@ var styles = StyleSheet.create({
         textAlign: 'center',
         color: '#333333',
         marginBottom: 5,
+    },
+    position: {
+        flexDirection:'row',
+        marginTop:10,
+        marginLeft:10,
+        borderWidth:1,
+        marginRight:10,
+        borderColor:'rgba(0, 134, 255, 0.3)',
+        backgroundColor:'white',
+        shadowColor:"#0086FF",
+        shadowOffset:{width: 1, height: 2},
+        shadowOpacity:0.4,
+        shadowRadius:1,
     }
 });

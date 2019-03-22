@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { Content, Card, CardItem, Text, Body } from "native-base";
+import {
+  AppRegistry,
+  StyleSheet,
+  View,
+} from 'react-native';
+import { Content, Card, CardItem, Text, Body, Button } from "native-base";
 
 export default class TabTwo extends Component {
   render() {
@@ -14,6 +19,13 @@ export default class TabTwo extends Component {
                 development. This helps you to build world-class application
                 experiences on native platforms.
               </Text>
+
+    <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center',
+        alignItems: 'stretch',}}>
+    <Button style={{width:168}} light><Text> 拒绝 </Text></Button>
+    <Button style={{width:168}}><Text> 授权 </Text></Button>
+    </View>
+
             </Body>
           </CardItem>
         </Card>
