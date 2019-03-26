@@ -33,7 +33,7 @@ export default class loginView extends Component {
         <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center',
             alignItems: 'stretch',}}>
         <Item style={{width:width-120,}} regular>
-        <Input placeholder="输入手机号" style={{marginLeft:15}}/>
+        <Input placeholder="输入手机号" style={{marginLeft:15,}}/>
             </Item>
             <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center',
             alignItems: 'stretch',}}>
