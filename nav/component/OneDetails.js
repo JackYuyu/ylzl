@@ -34,7 +34,10 @@ export default class OneDetails extends Component {
                 <Text>测试下FlatList 和 ListView性能</Text>
                 <Text onPress={()=>this.onclickBtn()}>点击再跳转FlatList</Text>
                 <Text onPress={()=>this.onclickBtn1()}>点击再跳转ListView</Text>
-            </View>
+                <Text onPress={()=>this.onclickBtn2()}>点击再跳转OpenHisView</Text>
+        <Text onPress={()=>this.onclickBtn3()}>点击再跳转OpenHisView</Text>
+
+        </View>
         );
     }
     onclickBtn =() =>{
@@ -42,6 +45,12 @@ export default class OneDetails extends Component {
     }
     onclickBtn1 =() =>{
         this.props.navigation.navigate('Authhistory')
+    }
+    onclickBtn2 =() =>{
+        this.props.navigation.navigate('openHistory')
+    }
+    onclickBtn3 =() =>{
+        this.props.navigation.navigate('loginView')
     }
 }
 

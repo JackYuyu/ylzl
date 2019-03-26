@@ -18,6 +18,8 @@ import OneDetails from './component/OneDetails'
 import OneDetailsFlat from './component/OneDetailsFlat'
 import OneDetailsList from './component/OneDetailsList'
 import Authhistory from'./component/Authhistory'
+import openHistory from'./component/openHistory'
+import loginView from'./component/loginView'
 
 export default class RootScene extends Component {
 
@@ -87,5 +89,11 @@ const Navigator = StackNavigator({
     },
     Authhistory : {
         screen:Authhistory
+    },
+    openHistory : {
+        screen:openHistory
+    },
+    loginView : {
+        screen:loginView
     }
 });

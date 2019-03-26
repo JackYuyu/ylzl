@@ -3,11 +3,14 @@ import {
   AppRegistry,
   StyleSheet,
   View,
+    Dimensions,
 } from 'react-native';
 import { Content, Card, CardItem, Text, Body, Button } from "native-base";
 
+var {height,width} =  Dimensions.get('window');
+
 export default class TabTwo extends Component {
-  render() {
+render() {
     return (
       <Content padder style={{ marginTop: 0 }}>
         <Card style={{ flex: 0 }}>
@@ -22,8 +25,8 @@ export default class TabTwo extends Component {
 
     <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center',
         alignItems: 'stretch',}}>
-    <Button style={{width:168}} light><Text> 拒绝 </Text></Button>
-    <Button style={{width:168}}><Text> 授权 </Text></Button>
+    <Button style={{width:(width-40)/2}} light><Text style={{marginLeft:50}}> 拒绝 </Text></Button>
+    <Button style={{width:(width-40)/2}}><Text style={{marginLeft:50}}> 授权 </Text></Button>
     </View>
 
             </Body>
