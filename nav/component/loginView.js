@@ -25,9 +25,9 @@ export default class loginView extends Component {
     render() {
         return (
             <Content padder style={{ marginTop: 0 }}>
-        <View style={{height:300,alignItems:'center'}}>
-    <Image source={require('../image/one_selected.png')} style={{width:110,height:110,borderRadius:30,marginTop:55,marginBottom:5}}/>
-
+        <View style={{flex: 1, flexDirection: 'column',height:300,alignItems:'center'}}>
+    <Image source={require('../image/icon_logo.png')} style={{width:110,height:110,borderRadius:30,marginTop:55,marginBottom:5}}/>
+        <Text style={{fontSize:18,color:'#444662'}}>云邻智联</Text>
         </View>
         <Form>
         <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center',

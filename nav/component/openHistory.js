@@ -74,7 +74,7 @@ export default class openHistory extends Component{
         </View>
         </View>
         <View style={{flex:1,flexDirction:'row',justifyContent:'space-around',alignItems:'flex-end',marginRight:17}}>
-    <Image source={require('../image/one_selected.png')} style={{width:75,height:75,borderRadius:30,marginTop:5,marginBottom:5}}/>
+    <Image source={require('../image/锁.png')} style={{width:75,height:75,borderRadius:30,marginTop:5,marginBottom:5}}/>
         </View>
         </View>
     )
