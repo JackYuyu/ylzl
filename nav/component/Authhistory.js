@@ -75,7 +75,7 @@ export default class Authhistory extends Component{
         </View>
         </View>
         <View style={{flex:1,flexDirction:'row',justifyContent:'space-around',alignItems:'flex-end',marginRight:17}}>
-    <Text style={{fontSize:18,color:'#FF007F'}}>待授权</Text>
+        <Image source={require('../image/已授权.png')} style={{width:105,height:50}}/>
         </View>
         </View>
     )
