@@ -15,6 +15,8 @@ import {
     FlatList,
     ActivityIndicator
 } from 'react-native';
+import DashSecondLine from './DashSecondLine';
+
 var {width,height} = Dimensions.get('window');
 var dataAry = []
 var start  = 0
@@ -68,18 +70,27 @@ export default class OneDetailsFlat extends Component{
         var B = parseInt(Math.random()*255)
         return(
             <View style={styles.position}>
-                <Image source={require('../image/one_selected.png')} style={{width:0,height:110,borderRadius:30,marginTop:5,marginBottom:5}}/>
                 <View style={{flexDirection:'column',justifyContent:'space-around',marginLeft:5}}>
+
                     <Text style={{fontSize:18,color:'#444662'}}>万达大厦 办业务</Text>
-                    <Text style={{fontSize:18,color:'#444662'}}>云邻公司张三四</Text>
+        <View style={{flexDirection:'row'}}>
+
+    <Text style={{fontSize:18,color:'#444662'}}>云邻公司张三四</Text>
+            <View style={{flex:1,flexDirction:'row',justifyContent:'space-around',alignItems:'flex-end',marginRight:17}}>
+        <Text style={{fontSize:18,color:'#FF007F'}}>申请中</Text>
+        </View>
+        </View>
                     <View style={{flexDirection:'row'}}>
                         <Text style={{fontSize:14,color:'# BDBDBD'}}>歌手:虚拟歌姬</Text>
                         <Text style={{fontSize:14,color:'#BDBDBD',marginLeft:10}}>专辑:react native</Text>
                     </View>
-                </View>
-            <View style={{flex:1,flexDirction:'row',justifyContent:'space-around',alignItems:'flex-end',marginRight:17}}>
-                <Text style={{fontSize:18,color:'#FF007F'}}>申请中</Text>
+                    <View>
+                    <DashSecondLine backgroundColor='gray' len={50} width={width-30}></DashSecondLine>
             </View>
+            <View style={{flexDirection:'row'}}>
+    <Text style={{fontSize:14,color:'# BDBDBD'}}>事由:申请面试</Text>
+        </View>
+                </View>
             </View>
         )
     }
@@ -129,6 +140,7 @@ var styles = StyleSheet.create({
     },
     position: {
         flexDirection:'row',
+        height:170,
         marginTop:10,
         marginLeft:10,
         borderWidth:1,

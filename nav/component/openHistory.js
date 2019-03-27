@@ -19,7 +19,7 @@ var start  = 0
 export default class openHistory extends Component{
     //返回首页方法需要修改react-navigation库的源码.修改方法见:http://www.jianshu.com/p/2f575cc35780
     static navigationOptions = ({ navigation }) => ({
-        title: '授权历史',
+        title: '开门统计',
         headerStyle:{backgroundColor:'#023AFC'},
         headerTintColor: 'black',
         // headerLeft:(
