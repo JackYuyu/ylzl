@@ -22,6 +22,7 @@ import openHistory from'./component/openHistory'
 import loginView from'./component/loginView'
 import feedback from'./component/feedback'
 import inviteHistory from'./component/inviteHistory'
+import about from'./component/about'
 
 export default class RootScene extends Component {
 
@@ -100,9 +101,11 @@ const Navigator = StackNavigator({
     },
     feedback : {
         screen:feedback
-    }
-    ,
+    },
     inviteHistory : {
         screen:inviteHistory
+    },
+    about : {
+        screen:about
     }
 });
