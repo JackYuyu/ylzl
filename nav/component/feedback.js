@@ -11,6 +11,14 @@ import DashSecondLine from './DashSecondLine';
 var {height,width} =  Dimensions.get('window');
 
 export default class feedback extends Component {
+    static navigationOptions = ({ navigation }) => ({
+        title: '意见反馈',
+        headerStyle:{backgroundColor:'#023AFC'},
+        headerTintColor: 'black',
+        // headerLeft:(
+//             <Text onPress={()=>navigation.goBack("Tab")}>返回首页</Text>
+//         ),
+    })
     render() {
         return (
             <Content padder style={{ marginTop: 0 }}>
