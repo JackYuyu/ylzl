@@ -20,6 +20,7 @@ import OneDetailsList from './component/OneDetailsList'
 import Authhistory from'./component/Authhistory'
 import openHistory from'./component/openHistory'
 import loginView from'./component/loginView'
+import feedback from'./component/feedback'
 
 export default class RootScene extends Component {
 
@@ -95,5 +96,8 @@ const Navigator = StackNavigator({
     },
     loginView : {
         screen:loginView
+    },
+    feedback : {
+        screen:feedback
     }
 });

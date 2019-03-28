@@ -36,6 +36,7 @@ export default class OneDetails extends Component {
                 <Text onPress={()=>this.onclickBtn1()}>点击再跳转ListView</Text>
                 <Text onPress={()=>this.onclickBtn2()}>点击再跳转OpenHisView</Text>
         <Text onPress={()=>this.onclickBtn3()}>点击再跳转OpenHisView</Text>
+        <Text onPress={()=>this.onclickBtn4()}>点击再跳转feedback</Text>
 
         </View>
         );
@@ -51,6 +52,9 @@ export default class OneDetails extends Component {
     }
     onclickBtn3 =() =>{
         this.props.navigation.navigate('loginView')
+    }
+    onclickBtn4 =() =>{
+        this.props.navigation.navigate('feedback')
     }
 }
 
